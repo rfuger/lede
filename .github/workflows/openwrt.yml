@@ -9,9 +9,9 @@
 
 name: OpenWrt
 
-on:
-  push:
-    branches: 
+#on:
+#  push:
+#    branches: 
       - master
   # schedule:
   #   - cron: 0 20 * * *
@@ -58,8 +58,8 @@ jobs:
       - name: 自定义插件
         run: |
           cd package
-          mkdir openwrt-packages
-          cd openwrt-packages
+          mkdir Lienol
+          cd Lienol
           git clone https://github.com/Lienol/openwrt-package.git
 
       - name: Update feeds
